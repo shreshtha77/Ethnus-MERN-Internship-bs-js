@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task6</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.login-box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+.login-box h1 {
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    background: #0095f6;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.options a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+p a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1><i>Instagram</i></h1>
+        <form id="login-form">
+            <div class="textbox">
+                <input type="text" placeholder="Username" id="username">
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <button type="button" class="btn" onclick="login()">Log in</button>
+            <div class="options">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="#">Sign up here</a></p>
+    </div>
+    <script src="script6.js"></script>
+</body>
+</html>

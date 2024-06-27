@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task5</title>
+    <style>
+        .error {
+            color: red;
+        }
+        .error-input {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <table border="0" cellspacing="10">
+                <tr>
+                    <td style="float:right;">
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" id="name">
+                        <span class="error" id="nameError" style="margin-left: 20px;">This field is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="float:right;">
+                        Email:
+                    </td>
+                    <td>
+                        <input type="email" id="email">
+                        <span class="error" id="emailError" style="margin-left: 20px;">A valid email address is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="float:right;">
+                        Website:
+                    </td>
+                    <td>
+                        <input type="text" id="website">
+                        <span class="error" id="websiteError" style="margin-left: 20px;">A valid URL is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="float:right;">
+                        Message:
+                    </td>
+                    <td>
+                        <textarea name="message" id="message" cols="25" rows="5"></textarea>
+                        <span class="error" id="messageError" style="margin-left: 20px; position:relative; top:-70px;">This field is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" onclick="validateForm()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <script src="script5.js"></script>
+</body>
+</html>
